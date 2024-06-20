@@ -29,3 +29,16 @@ Given the volume of HTTP packets involved in loading even a single webpage, thos
 Conclusion: HTTP is an extensible protocol that is easy to use. The client-server structure, combined with the ability to add headers, allows HTTP to advance along with
 the extended capabilities of the Web.Though HTTP/2 adds some complexity by embedding HTTP messages in frames to improve performance, the basic structure of messages has stayed the same since HTTP/1.0. 
 Session flow remains basic, allowing it to be investigated and debugged with a HTTP network monitor.
+
+Http Methods - HTTP defines a set of request methods to indicate the desired actions to be performed for a given resources.
+Although they can also be nouns, these request methods are sometimes referred to as HTTP verbs. Each of them implements a different semantic, 
+but some common features are shared by a group of them. The few mentioned methods are listed below
+1. GET - The GET method requests a representation of the specified resource.Requests using GET should only retrieve data.
+2.HEAD - The HEAD method asks for a response identical to a GET request, but without the response body.
+3.POST - The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server.
+4. PUT - The PUT method replaces all current representations of the target resource with the request payload.
+5.DELETE - The DELETE method deletes the specified resource.
+6.CONNECT - The CONNECT method establishes a tunnel to the server identified by the target resource.
+7.OPTIONS - The OPTIONS method describes the communication options for the target resource.
+8.TRACE - The TRACE method performs a message loop-back test along the path to the target resource.
+9.PATCH - The PATCH method applies partial modifications to a resource.
