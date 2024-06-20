@@ -1,0 +1,31 @@
+What is HTTP 1.1?
+The Hypertext transfer protocol (HTTP) is a data communication protocol and acts as a foundation of the world wide web.
+This was the first usable language which was created in 1997. It went through several stages of development, this first version of HTTP was called as HTTP/1.1 and this version is still in use on web.
+
+What is HTTP/2?
+HTTP released a new version in 2015 which is HTTP/2. This solves the several problems that the creators of HTTP/1.1 did not anticipate.
+In particular, HTTP 2 is much faster and more efficient than HTTP/1.1. One of the ways in which HTTP/2 is faster is in how it prioritizes content during the loading process.
+
+HTTP/1.1 and HTTP/2 main differences
+
+Prioritization: Prioritization refers to the order in which pieces of content are loaded. Prioritization affects a webpage's load time.
+For example, certain resources, like large JavaScript files, may block the rest of the page from loading if they have to load first.
+More of the page can load at once if these render-blocking resources load last.In HTTP/2, developers have hands-on, detailed control over prioritization.
+This allows them to maximize perceived and actual page load speed to a degree that was not possible in HTTP/1.1. HTTP/2 offers a feature called weighted prioritization.
+This allows developers to decide which page resources will load first, every time.
+
+Multiplexing: HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it.
+In contrast, HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource.
+HTTP/2 does this by splitting data into binary-code messages and numbering these messages so that the client knows which stream each binary message belongs to.
+
+Server Push: Typically, a server only serves content to a client device if the client asks for it. However, this approach is not always practical for modern webpages,
+which often involve several dozen separate resources that the client must request. HTTP/2 solves this problem by allowing a server to "push" content to a client before the client asks for it.
+The server also sends a message letting the client know what pushed content to expect – like if Bob had sent Alice a Table of Contents of his novel before sending the whole thing.
+
+Header Compression: mall files load more quickly than large ones. To speed up web performance, both HTTP/1.1 and HTTP/2 compress HTTP messages to make them smaller.
+However, HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets. This eliminates a few bytes from every HTTP packet.
+Given the volume of HTTP packets involved in loading even a single webpage, those bytes add up quickly, resulting in faster loading.
+
+Conclusion: HTTP is an extensible protocol that is easy to use. The client-server structure, combined with the ability to add headers, allows HTTP to advance along with
+the extended capabilities of the Web.Though HTTP/2 adds some complexity by embedding HTTP messages in frames to improve performance, the basic structure of messages has stayed the same since HTTP/1.0. 
+Session flow remains basic, allowing it to be investigated and debugged with a HTTP network monitor.
